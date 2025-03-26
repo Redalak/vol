@@ -106,5 +106,5 @@ class Vol
     {
         $this->prix = $prix;
     }
-   
+
 }
