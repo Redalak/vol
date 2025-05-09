@@ -17,6 +17,7 @@
     <link href="../assets/css/styles.css" rel="stylesheet" />
 </head>
 <body id="page-top">
+<body id="page-top" style="background-image:url('../assets/img/img.png'); ">
 <?php
 require_once 'PopUp.php';
 if(isset($_GET['parametre'])){
@@ -38,7 +39,7 @@ if(isset($_GET['parametre'])){
 <!-- Navigation-->
 <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div class="container px-4 px-lg-5">
-        <a class="navbar-brand" href="../index.php?erreur=1">RedAeroport- Accueil </a>
+        <a class="navbar-brand" href="index.php">RedAeroport- Accueil </a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             Menu
             <i class="fas fa-bars"></i>

@@ -5,8 +5,58 @@ namespace modele;
 class Reservation
 {
     private $idReservation;
-    private $idUser;
-    private $idVol;
+    private $refUser;
+    private $refVol;
+
+    private $prixBillet;
+
+    /**
+     * @return mixed
+     */
+    public function getRefUser()
+    {
+        return $this->refUser;
+    }
+
+    /**
+     * @param mixed $refUser
+     */
+    public function setRefUser($refUser)
+    {
+        $this->refUser = $refUser;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getRefVol()
+    {
+        return $this->refVol;
+    }
+
+    /**
+     * @param mixed $refVol
+     */
+    public function setRefVol($refVol)
+    {
+        $this->refVol = $refVol;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getPrixBillet()
+    {
+        return $this->prixBillet;
+    }
+
+    /**
+     * @param mixed $prixBillet
+     */
+    public function setPrixBillet($prixBillet)
+    {
+        $this->prixBillet = $prixBillet;
+    }
     private $dateReservation;
 
     /**

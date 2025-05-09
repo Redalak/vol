@@ -3,7 +3,10 @@
 class Bdd
 {
     public function getBdd(){
-        return new Bdd('mysql:host=localhost;dbname=vol;charset=utf8','root','');
-}
-
+        try {
+            return new PDO('mysql:host=localhost;dbname=vol;charset=utf8', 'root', '');
+        } catch (PDOException $e) {
+            die('Erreur de connexion : ' . $e->getMessage());
+        }
+    }
 }

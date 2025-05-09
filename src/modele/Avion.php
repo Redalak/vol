@@ -6,7 +6,25 @@ class Avion
 {
     private $idAvion;
 
-    private $modelAvion;
+    private $nom;
+
+    /**
+     * @return mixed
+     */
+    public function getNom()
+    {
+        return $this->nom;
+    }
+
+    /**
+     * @param mixed $nom
+     */
+    public function setNom($nom)
+    {
+        $this->nom = $nom;
+    }
+
+    private $refModele;
 
     /**
      * @return mixed
@@ -27,17 +45,17 @@ class Avion
     /**
      * @return mixed
      */
-    public function getModelAvion()
+    public function getModeleAvion()
     {
-        return $this->modelAvion;
+        return $this->modeleAvion;
     }
 
     /**
-     * @param mixed $modelAvion
+     * @param mixed $modeleAvion
      */
-    public function setModelAvion($modelAvion)
+    public function setModeleAvion($modeleAvion)
     {
-        $this->modelAvion = $modelAvion;
+        $this->modeleAvion = $modeleAvion;
     }
 
 
